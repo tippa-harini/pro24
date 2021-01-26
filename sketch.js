@@ -27,6 +27,7 @@ function setup() {
 	paper=new Paper(250,640,0.5);
 
 	d1=new Dustbin(600,640,100,20);
+	
 	Engine.run(engine);
   
 }

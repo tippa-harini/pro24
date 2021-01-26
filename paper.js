@@ -1,5 +1,5 @@
 class Paper {
-    Constucter(x,y,r){
+    Constructer(x,y,r){
         var options = {
             isStatic:false,
             restitution:0.3,
@@ -8,9 +8,7 @@ class Paper {
 
         }
 
-        this.body=Bodies.circle(this.x,this.y,this.r/2,options);
-        this.x=x;
-        this.y=y;
+        this.body=Bodies.circle(x,y,r/2,options);
         this.r=r;
         World.add(world,this.body);
    }
