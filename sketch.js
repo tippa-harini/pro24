@@ -24,9 +24,11 @@ function setup() {
 
 	ground=new Ground(400,650,800,10);
 
-	paper=new Paper(250,640,0.5);
+	paper=new Paper(150,640,40);
 
-	d1=new Dustbin(600,640,100,20);
+	d1=new Dustbin(600,640,200,15);
+	d2=new Dustbin(500,599,15,100);
+	d3=new Dustbin(700,599,15,100);
 	
 	Engine.run(engine);
   
@@ -40,6 +42,8 @@ function draw() {
   ground.display();
   paper.display();
   d1.display();
+  d2.display();
+  d3.display();
   drawSprites();
   keyPressed();
  

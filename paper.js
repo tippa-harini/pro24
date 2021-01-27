@@ -1,5 +1,5 @@
 class Paper {
-    Constructer(x,y,r){
+    constructor(x,y,r){
         var options = {
             isStatic:false,
             restitution:0.3,
@@ -14,13 +14,13 @@ class Paper {
    }
    display(){
 
-       var paperpos=this.body.position;
+       var pos =this.body.position;
 
        push()
-       translate(paperpos.x,paperpos.y);
+       translate(pos.x,pos.y);
        rectMode(CENTER);
        strokeWeight(3);
-       fill(255,0,255);
+       fill(225);
        ellipse(0,0,this.r,this.r);
        pop();
    }
