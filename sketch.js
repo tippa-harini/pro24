@@ -14,7 +14,7 @@ function preload()
 }
 
 function setup() {
-	createCanvas(800, 700);
+	createCanvas(1500, 700);
 
 
 	engine = Engine.create();
@@ -22,13 +22,13 @@ function setup() {
 
 	//Create the Bodies Here.
 
-	ground=new Ground(400,650,800,10);
+	ground=new Ground(600,650,1500,10);
 
-	paper=new Paper(150,640,40);
+	paper=new Paper(20,640,40);
 
-	d1=new Dustbin(600,640,200,15);
-	d2=new Dustbin(500,599,15,100);
-	d3=new Dustbin(700,599,15,100);
+	d1=new Dustbin(1200,640,200,15);
+	d2=new Dustbin(1300,570,15,150);
+	d3=new Dustbin(1100,570,15,150);
 	
 	Engine.run(engine);
   
@@ -50,7 +50,7 @@ function draw() {
 }
 function keyPressed(){
 	if(keyCode===UP_ARROW){
-		Matter.body.applyForce(paper.body,paper.body.position,{x:85,y:-85})
+		Matter.Body.applyForce(paper.body,paper.body.position,{x:50,y:-85})
 	}
 }
 
