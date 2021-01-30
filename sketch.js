@@ -45,12 +45,12 @@ function draw() {
   d2.display();
   d3.display();
   drawSprites();
-  keyPressed();
+ 
  
 }
 function keyPressed(){
 	if(keyCode===UP_ARROW){
-		Matter.Body.applyForce(paper.body,paper.body.position,{x:50,y:-85})
+		Matter.Body.applyForce(paper.body,paper.body.position,{x:105,y:-85})
 	}
 }
 
