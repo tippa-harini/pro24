@@ -22,13 +22,14 @@ function setup() {
 
 	//Create the Bodies Here.
 
-	ground=new Ground(600,650,1500,10);
+	ground=new Ground(600,650,1800,10);
 
 	paper=new Paper(20,640,40);
+	
 
-	d1=new Dustbin(1200,640,200,15);
-	d2=new Dustbin(1300,570,15,150);
-	d3=new Dustbin(1100,570,15,150);
+	d1=new Dustbin(1200,640,180,15);
+	d2=new Dustbin(1285,570,15,150);
+	d3=new Dustbin(1125,570,15,150);
 	
 	Engine.run(engine);
   
@@ -37,14 +38,15 @@ function setup() {
 
 function draw() {
   rectMode(CENTER);
-  background(0);
-  
-  ground.display();
+  background(225);
   paper.display();
   d1.display();
   d2.display();
   d3.display();
+ 
+  ground.display();
   drawSprites();
+  
  
  
 }
