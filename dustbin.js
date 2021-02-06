@@ -16,6 +16,6 @@ class Dustbin {
       fill(225,0,225);
       imageMode(CENTER);
       image(this.image,1200,550,200,200)
-      rect(pos.x,pos.y , this.width, this.height);
+     // rect(pos.x,pos.y , this.width, this.height);
     }
 }
